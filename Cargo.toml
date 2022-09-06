@@ -1,0 +1,12 @@
+[package]
+name = "wk"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+iced  = { git = 'https://github.com/iced-rs/iced'}
+ngrammatic = "0.4.0"
+sqlx = { version = "0.6", features = [ "runtime-tokio-rustls" ] }
+tokio = { version = "1", features = ["full"] }
+rusqlite = { version = "0.28.0", features = ["bundled"] }
